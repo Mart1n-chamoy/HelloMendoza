@@ -1,0 +1,215 @@
+
+ /* Fondo de la página */
+ body {
+    background: url('/pexels-nano-erdozain-120534369-19046646\ \(1\).jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Texto blanco para contraste */
+}
+
+/* Navbar transparente */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.0); /* Negro semi-transparente */
+}
+
+.navbar-toggler{
+    color: #e4a1ab;
+    margin-top: 20px;
+    background-color: #8A434E;
+    }
+
+.navbar-nav .custom-link {
+font-family: 'DM Sans', sans-serif;
+font-weight: 700; /* Texto en bold */
+color: #8A434E; /* Color inicial */
+transition: color 0.3s ease; /* Suaviza la transición al hover */
+margin-right: 50px;
+}
+
+.navbar-nav .custom-link:hover {
+    color: #e4a1ab; /* Color al pasar el mouse */
+}
+
+/* Hero Section transparente */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: rgba(0, 0, 0, 0.0); /* Fondo semi-transparente */
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: #8A434E; /* Color base */
+color: white;
+border-radius: 20px;
+/*padding: 10px 30px;*/
+margin-left: 20px;
+padding-left: 30px;
+padding-right: 30px;
+transition: background-color 0.3s ease; /* Efecto suave */
+}
+
+.btn-custom:hover {
+    background-color: #6A2E3A;
+}
+
+.btn-info-custom {
+    background-color: transparent; /* Fondo transparente */
+color: #e4a1ab; /* Color del texto */
+border: 2px solid #8A434E; /* Borde */
+border-radius: 20px;
+margin-right: 10px;
+padding-left: 30px;
+padding-right: 30px;
+transition: all 0.3s ease; /* Efecto suave */
+}
+
+.btn-info-custom:hover {
+    background-color: #8A434E;
+    color: white;
+}
+
+.btn-custom-1 {
+background-color: #8A434E; /* Color base */
+color: white;
+font-size:larger;
+border-radius: 30px;
+/*padding: 10px 30px;*/
+margin-left: 20px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 15px;
+padding-bottom: 15px;
+transition: background-color 0.3s ease; /* Efecto suave */
+}
+
+/* Estilo hover para el botón */
+.btn-custom-1:hover {
+background-color: #6A2E3A; /* Nuevo color al hacer hover */
+color: #fff; /* Asegura que el texto siga siendo blanco */
+}
+
+
+/* Cards transparentes */
+/* Opcional: Para personalización adicional */
+.card {
+backdrop-filter: blur(5px); /* Efecto difuminado */
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);  /*Sombra */
+}
+
+.card img {
+height: 150px; /* Ajustar altura de la imagen */
+object-fit:cover; /* Imagen recortada */
+
+}
+
+.btn-outline-light {
+border-width: 2px; /* Contorno más marcado */
+font-weight: bold;
+}
+
+
+.testimonios {
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 40px 0;
+}
+
+.testimonios .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaciado entre los mensajes */
+}
+
+.message {
+    color: rgb(57, 57, 57);
+    max-width: 75%; /* Limita el ancho de los mensajes */
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.left {
+    align-self: flex-start; /* Posiciona a la izquierda */
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.message.right {
+    align-self: flex-end; /* Posiciona a la derecha */
+    background-color: #a3d8a3; /* Fondo verde */
+}
+
+.message p {
+    margin: 0;
+}
+
+
+.footer {
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.footer-logo{
+    margin-top: 20px;
+}
+
+.footer .social-icons img {
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+
+.footer p {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700; /* Texto en bold */
+    color: #8b3c3c; /* Color burdeos */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* Contenedor para el botón de copiar */
+.copy-container {
+    display: flex; /* Usa Flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    gap: 10px; /* Espaciado entre elementos */
+    background-color: #8A434E;
+    border-radius: 5px;
+    padding-right: 10px;
+    color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    position: absolute; /* Posiciona el contenedor de manera absoluta dentro de un contenedor padre */
+    top: 5px; /* A 20px del borde inferior */
+    right: 50px; /* A 20px del borde derecho */
+    z-index: 9999; /* Asegura que el botón quede encima de otros elementos */
+    padding: 3px 5px; /* Agregar algo de espacio */
+}
+
+/* Estilo del botón de copiar */
+.copy-button {
+    padding: 8px 12px;
+    background-color: #8A434E;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de hover con transición más suave */
+.copy-button:hover {
+    background-color: #e4a1ab; /* Cambiar color al pasar el cursor */
+    transform: scale(1.05); /* Efecto de suavizado de escala al pasar el cursor */
+}
+
+
