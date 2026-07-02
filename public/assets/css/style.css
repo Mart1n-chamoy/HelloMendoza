@@ -257,3 +257,47 @@ a.dropdown-item:hover{
     background-color: #50603C;
 }
 
+
+/* ===== Modales de experiencias (View Details) ===== */
+.experience-modal {
+    border-radius: 20px;
+    border: none;
+    overflow: hidden;
+    background-color: #fffaf8;
+}
+
+.experience-modal .modal-header {
+    background-color: #8A434E;
+    color: white;
+    border-bottom: none;
+}
+
+.experience-modal .modal-header .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.experience-modal .modal-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.experience-modal .modal-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.experience-modal .modal-body {
+    color: #333;
+    padding: 1.5rem 1.75rem;
+}
+
+.experience-modal .modal-body h6 {
+    color: #8A434E;
+    font-weight: 700;
+}
+
+.experience-modal .modal-footer {
+    border-top: none;
+    padding: 1rem 1.75rem 1.5rem;
+}
