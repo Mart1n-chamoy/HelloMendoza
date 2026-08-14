@@ -31,11 +31,16 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="lang-switcher">
+                <button type="button" data-lang="es">ES</button>
+                <button type="button" data-lang="en">EN</button>
+                <button type="button" data-lang="pt">PT</button>
+            </div>
             <ul class="navbar-nav">
                 <!-- Item Paquetes con submenú desplegable -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle d-flex align-items-center custom-link" href="#" id="paquetesDropdown" role="button" data-bs-toggle="collapse" data-bs-target="#paquetesMenu" aria-expanded="false" aria-controls="paquetesMenu">
-                        Packages
+                        <span data-i18n="nav.packages">Packages</span>
                     </a>
                 
             
@@ -51,11 +56,11 @@
     </div>
     </li>
             <!-- Otros enlaces -->
-            <li class="nav-item"><a class="nav-link custom-link" href="#hero">About Us</a></li>
-            <li class="nav-item"><a class="nav-link custom-link" href="#clientes">Customers</a></li>
+            <li class="nav-item"><a class="nav-link custom-link" href="#hero" data-i18n="nav.about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link custom-link" href="#clientes" data-i18n="nav.customers">Customers</a></li>
             </ul>
-            <a href="https://wa.me/5492614603906" target="_blank" class="text-reset text-decoration-none"><button class="btn btn-info-custom ms-3">More Info</button>
-            <a href="#formulario-contacto" class="text-reset text-decoration-none"><button class="btn btn-custom ms-2">Buy tour</button></a>
+            <a href="https://wa.me/5492614603906" target="_blank" class="text-reset text-decoration-none"><button class="btn btn-info-custom ms-3" data-i18n="nav.moreinfo">More Info</button></a>
+            <a href="#formulario-contacto" class="text-reset text-decoration-none"><button class="btn btn-custom ms-2" data-i18n="nav.buytour">Buy tour</button></a>
         </div>        
     </div>
 </nav>
@@ -63,9 +68,9 @@
 <!-- Hero Section -->
 <section class="hero" id="hero">
     <div class="container">
-        <h1>We are locals <br> but speak your language</h1>
-        <p>Discover the Soul of Mendoza's Wineries.</p>
-        <a class="btn btn-custom-1 mt-3" href="#formulario-contacto">Let's take a tour</a>
+        <h1 data-i18n-html="hero.title">We are locals <br> but speak your language</h1>
+        <p data-i18n="hero.subtitle">Discover the Soul of Mendoza's Wineries.</p>
+        <a class="btn btn-custom-1 mt-3" href="#formulario-contacto" data-i18n="hero.cta">Let's take a tour</a>
     </div>
 </section>
 
@@ -83,12 +88,12 @@
         <!-- Card 1 -->
         <div class="col-md-4 mb-4" id="paquete1">
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
-                <img src="assets/images/content/pexels-rojda-182137743-15170729.png" class="card-img-top rounded" alt="Experiencia Luján">
+                <img src="assets/images/content/pexels-rojda-182137743-15170729.jpg" class="card-img-top rounded" alt="Experiencia Luján">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Luján de cuyo”</h5>
-                    <p class="card-text mb-2">Te invitamos a descubrir juntos en este tour nuestra apasionante cultura por este varietal  en Luján de Cuyo tierra Malbec por excelencia.</p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">6 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete1">View Details</a>
+                    <h5 class="card-title fw-bold" data-i18n="pkg1.title">Experiencia “Luján de cuyo”</h5>
+                    <p class="card-text mb-2" data-i18n="pkg1.desc">Te invitamos a descubrir juntos en este tour nuestra apasionante cultura por este varietal  en Luján de Cuyo tierra Malbec por excelencia.</p>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg1.hours">6 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete1" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -96,12 +101,12 @@
         <!-- Card 2 -->
         <div class="col-md-4 mb-4" id="paquete2">
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
-                <img src="assets/images/content/pexels-hamid-eshafah-245702689-17503894.png" class="card-img-top rounded" alt="Experiencia Maipú">
+                <img src="assets/images/content/pexels-hamid-eshafah-245702689-17503894.jpg" class="card-img-top rounded" alt="Experiencia Maipú">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Maipú”</h5>
-                    <p class="card-text mb-2">Tour en el cual daremos un paseo por nuestras raíces, calles con túneles formados por antiguas arboledas, paisajes rústicos llenos de olivares y viñedos. </p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">8 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete2">View Details</a>
+                    <h5 class="card-title fw-bold" data-i18n="pkg2.title">Experiencia “Maipú”</h5>
+                    <p class="card-text mb-2" data-i18n="pkg2.desc">Tour en el cual daremos un paseo por nuestras raíces, calles con túneles formados por antiguas arboledas, paisajes rústicos llenos de olivares y viñedos. </p>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg2.hours">8 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete2" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -111,10 +116,10 @@
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
                 <img src="assets/images/content/pexels-brettjordan-20644769.png" class="card-img-top rounded" alt="Experiencia Valle de Uco">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Valle de Uco”</h5>
-                    <p class="card-text mb-2">La experiencia turística en esta región se vive a través de sus bodegas de prestigio mundial, la calidez de su gente y su gastronomía típica que permite a los visitantes conectarse con los sabores, costumbres e identidad local. </p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">10 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete3">View Details</a>
+                    <h5 class="card-title fw-bold" data-i18n="pkg3.title">Experiencia “Valle de Uco”</h5>
+                    <p class="card-text mb-2" data-i18n="pkg3.desc">La experiencia turística en esta región se vive a través de sus bodegas de prestigio mundial, la calidez de su gente y su gastronomía típica que permite a los visitantes conectarse con los sabores, costumbres e identidad local. </p>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg3.hours">10 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete3" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -124,10 +129,10 @@
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
                 <img src="assets/images/content/pexels-pixabay-51947.jpg" class="card-img-top rounded" alt="Experiencia Potrerillos">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Potrerillos”</h5>
+                    <h5 class="card-title fw-bold" data-i18n="pkg4.title">Experiencia “Potrerillos”</h5>
                     <p class="card-text mb-2">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor.</p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">6 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete4">View Details</a>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg4.hours">6 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete4" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -136,10 +141,10 @@
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
                 <img src="assets/images/content/pexels-jill-wellington-1638660-39351.jpg" class="card-img-top rounded" alt="Experiencia Potrerillos">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Salentein”</h5>
+                    <h5 class="card-title fw-bold" data-i18n="pkg5.title">Experiencia “Salentein”</h5>
                     <p class="card-text mb-2">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor.</p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">2 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete5">View Details</a>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg5.hours">2 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete5" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -148,10 +153,10 @@
             <div class="card h-100 p-3 text-white" style="background-color: rgba(54, 65, 42, 0.7); border-radius: 15px; border: none;">
                 <img src="assets/images/content/pexels-valeriya-1123260.jpg" class="card-img-top rounded" alt="Experiencia Potrerillos">
                 <div class="card-body">
-                    <h5 class="card-title fw-bold">Experiencia “Los Toneles”</h5>
+                    <h5 class="card-title fw-bold" data-i18n="pkg6.title">Experiencia “Los Toneles”</h5>
                     <p class="card-text mb-2">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor.</p>
-                    <p class="card-text"><small>Time • <span class="fw-bold">7 Hours</span></small></p>
-                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete6">View Details</a>
+                    <p class="card-text"><small><span data-i18n="common.time">Time •</span> <span class="fw-bold" data-i18n="pkg6.hours">7 Hours</span></small></p>
+                    <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalPaquete6" data-i18n="common.view_details">View Details</a>
                 </div>
             </div>
         </div>
@@ -165,14 +170,14 @@
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete1Label">Luján de cuyo, tour por la tierra del Malbec (3 bodegas).</h5>
+                <h5 class="modal-title" id="modalPaquete1Label" data-i18n="modal1.title">Luján de cuyo, tour por la tierra del Malbec (3 bodegas).</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <img src="assets/images/content/pexels-rojda-182137743-15170729.png" class="modal-img" alt="Experiencia Luján">
+            <img src="assets/images/content/pexels-rojda-182137743-15170729.jpg" class="modal-img" alt="Experiencia Luján">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 6 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> A coordinar según hotel/alojamiento</p>
-                <p>Participaremos de una degustación de vinos en dos bodegas con historia y tradición vitivinícola. <br><br>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal1.duration_value">6 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> <span data-i18n="common.meeting_value">A coordinar según hotel/alojamiento</span></p>
+                <p data-i18n-html="modal1.description">Participaremos de una degustación de vinos en dos bodegas con historia y tradición vitivinícola. <br><br>
 Seguidamente nos  dirigimos a la tercera bodega donde realizaremos el almuerzo maridado con vinos para apreciar con todos los sentidos. <br><br>
 Este tour es apto para disfrutar en todas las épocas del año ya que Mendoza presenta diferentes paisajes y productos regionales en cada estación para el deleite de nuestros  visitantes. <br><br>
 <h6 class="mt-3">Bodegas sugeridas:</h6> Bonfanti, Vistalba, Benegas, Penedo Borges, Caelum, Mendel, Budeguer, Lorca, Renacer, Dante Robino, Norton, Chandon, Huarpe, Piatelli, Las Perdices, Susana Balbo, Weinert
@@ -180,17 +185,17 @@ Este tour es apto para disfrutar en todas las épocas del año ya que Mendoza pr
 <h6 class="mt-3">Tour ideal con niños:</h6>
 Bonfanti, Tempus Alba, Ciudad
 </p>
-                <h6 class="mt-3">Incluye:</h6>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Transporte privado ida y vuelta</li>
-                    <li>Guía bilingüe (español / inglés / portugués)</li>
-                    <li>Degustación en 3 bodegas</li>
-                    <li>Almuerzo o picada regional</li>
+                    <li data-i18n="modal1.include1">Transporte privado ida y vuelta</li>
+                    <li data-i18n="common.bilingual_guide">Guía bilingüe (español / inglés / portugués)</li>
+                    <li data-i18n="modal1.include3">Degustación en 3 bodegas</li>
+                    <li data-i18n="modal1.include4">Almuerzo o picada regional</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal1.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal1.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -201,14 +206,14 @@ Bonfanti, Tempus Alba, Ciudad
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete2Label">Maipú, tour por la cuna del vino (2 bodegas y 1 olivícola)</h5>
+                <h5 class="modal-title" id="modalPaquete2Label" data-i18n="modal2.title">Maipú, tour por la cuna del vino (2 bodegas y 1 olivícola)</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <img src="assets/images/content/pexels-hamid-eshafah-245702689-17503894.png" class="modal-img" alt="Experiencia Maipú">
+            <img src="assets/images/content/pexels-hamid-eshafah-245702689-17503894.jpg" class="modal-img" alt="Experiencia Maipú">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 8 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> A coordinar según hotel/alojamiento</p>
-                <p>Situada a unos 20 minutos de la ciudad de Mendoza, exploraremos esta región con vinos de culto de los cuales el mundo no deja de hablar.  <br><br>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal2.duration_value">8 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> <span data-i18n="common.meeting_value">A coordinar según hotel/alojamiento</span></p>
+                <p data-i18n-html="modal2.description">Situada a unos 20 minutos de la ciudad de Mendoza, exploraremos esta región con vinos de culto de los cuales el mundo no deja de hablar.  <br><br>
 Visitaremos bodegas con tradición ferroviaria y de inmigrantes ligada a la vitivinicultura y también bodegas boutique con vinos de autor donde degustaremos sus vinos, participaremos de diferentes experiencias y conoceremos sus instalaciones. También visitaremos una olivícola de la región para aprender sobre los beneficios de consumir aceite de oliva. <br><br>
 Finalizaremos con un almuerzo maridado con los vinos de la bodega y un menú pensado para destacar las virtudes de cada expresión varietal o blend en una auténtica experiencia enogastronómica mendocina. <br><br>
 <h6 class="mt-3">Bodegas y olivícolas sugeridas:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino wines, Manuel Villafañe, Finca Sabina, laur, maguay, pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia. El Enemigo, Mil suelos, para tour caro. 
@@ -216,17 +221,17 @@ Finalizaremos con un almuerzo maridado con los vinos de la bodega y un menú pen
 <h6 class="mt-3">Tour ideal con niños:</h6>
 Bonfanti, Tempus Alba, Ciudad
 </p>
-                <h6 class="mt-3">Incluye:</h6>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Transporte privado ida y vuelta</li>
-                    <li>Guía bilingüe (español / inglés / portugués)</li>
-                    <li>Degustación en bodega + olivícola</li>
-                    <li>Almuerzo incluido</li>
+                    <li data-i18n="modal2.include1">Transporte privado ida y vuelta</li>
+                    <li data-i18n="common.bilingual_guide">Guía bilingüe (español / inglés / portugués)</li>
+                    <li data-i18n="modal2.include3">Degustación en bodega + olivícola</li>
+                    <li data-i18n="modal2.include4">Almuerzo incluido</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal2.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal2.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -237,14 +242,14 @@ Bonfanti, Tempus Alba, Ciudad
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete3Label">Valle de Uco, tour de imponente paisaje cordillerano.</h5>
+                <h5 class="modal-title" id="modalPaquete3Label" data-i18n="modal3.title">Valle de Uco, tour de imponente paisaje cordillerano.</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <img src="assets/images/content/pexels-brettjordan-20644769.png" class="modal-img" alt="Experiencia Valle de Uco">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 10 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> A coordinar según hotel/alojamiento</p>
-                <p>El Valle de Uco es una de las zonas más reconocidas de Mendoza por su nivel de servicios al turista como hoteles y resorts y también por su vitivinicultura de altura que posiciona al fértil valle agrícola como uno de los mejores destinos enoturísticos a nivel nacional e internacional. <br><br>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal3.duration_value">10 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> <span data-i18n="common.meeting_value">A coordinar según hotel/alojamiento</span></p>
+                <p data-i18n-html="modal3.description">El Valle de Uco es una de las zonas más reconocidas de Mendoza por su nivel de servicios al turista como hoteles y resorts y también por su vitivinicultura de altura que posiciona al fértil valle agrícola como uno de los mejores destinos enoturísticos a nivel nacional e internacional. <br><br>
 Su imponente paisaje cordillerano, se encuentra enmarcado por la cordillera de Los Andes, el cordón del Plata y el volcán Tupungato con arroyos y ríos de deshielo que bañan un aérea de imponente belleza natural y escenarios espectaculares para la práctica de actividades al aire libre. <br><br>
 Esta vasta región se compone de tres departamentos Tupungato, Tunuyán y San Carlos, por lo que al planear el paseo es importante saber que la zona vitivinícola más alejada de la ciudad de Mendoza, San Carlos, se encuentra a dos horas de viaje. <br><br>
 Participaremos de una experiencia sensorial que combina vino, naturaleza y vistas privilegiadas a la Cordillera de los Andes. <br><br>
@@ -255,17 +260,17 @@ Luego realizaremos el almuerzo con maridaje en un restaurante de bodega que se d
 <h6 class="mt-3">Tour ideal con niños:</h6>
 Bonfanti, Tempus Alba, Ciudad
 </p>
-                <h6 class="mt-3">Incluye:</h6>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Transporte privado ida y vuelta</li>
-                    <li>Guía bilingüe (español / inglés / portugués)</li>
-                    <li>Degustación en 2 bodegas premium</li>
-                    <li>Almuerzo gourmet con maridaje</li>
+                    <li data-i18n="modal3.include1">Transporte privado ida y vuelta</li>
+                    <li data-i18n="common.bilingual_guide">Guía bilingüe (español / inglés / portugués)</li>
+                    <li data-i18n="modal3.include3">Degustación en 2 bodegas premium</li>
+                    <li data-i18n="modal3.include4">Almuerzo gourmet con maridaje</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal3.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal3.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -276,25 +281,25 @@ Bonfanti, Tempus Alba, Ciudad
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete4Label">Experiencia "Potrerillos"</h5>
+                <h5 class="modal-title" id="modalPaquete4Label" data-i18n="modal4.title">Experiencia "Potrerillos"</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <img src="assets/images/content/pexels-pixabay-51947.jpg" class="modal-img" alt="Experiencia Potrerillos">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 6 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> A coordinar según hotel/alojamiento</p>
-                <p>Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Naturaleza y montaña junto al dique de Potrerillos, ideal para combinar con actividades al aire libre.</p>
-                <h6 class="mt-3">Incluye:</h6>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal4.duration_value">6 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> <span data-i18n="common.meeting_value">A coordinar según hotel/alojamiento</span></p>
+                <p data-i18n="modal4.description">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Naturaleza y montaña junto al dique de Potrerillos, ideal para combinar con actividades al aire libre.</p>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Transporte privado ida y vuelta</li>
-                    <li>Guía bilingüe (español / inglés / portugués)</li>
-                    <li>Parada panorámica en el dique</li>
-                    <li>Snack o almuerzo liviano</li>
+                    <li data-i18n="modal4.include1">Transporte privado ida y vuelta</li>
+                    <li data-i18n="common.bilingual_guide">Guía bilingüe (español / inglés / portugués)</li>
+                    <li data-i18n="modal4.include3">Parada panorámica en el dique</li>
+                    <li data-i18n="modal4.include4">Snack o almuerzo liviano</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal4.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal4.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -305,24 +310,24 @@ Bonfanti, Tempus Alba, Ciudad
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete5Label">Experiencia "Salentein"</h5>
+                <h5 class="modal-title" id="modalPaquete5Label" data-i18n="modal5.title">Experiencia "Salentein"</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <img src="assets/images/content/pexels-jill-wellington-1638660-39351.jpg" class="modal-img" alt="Experiencia Salentein">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 2 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> Bodega Salentein, Valle de Uco</p>
-                <p>Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Visita exprés ideal para quienes tienen poco tiempo pero quieren una experiencia premium.</p>
-                <h6 class="mt-3">Incluye:</h6>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal5.duration_value">2 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> Bodega Salentein, Valle de Uco</p>
+                <p data-i18n="modal5.description">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Visita exprés ideal para quienes tienen poco tiempo pero quieren una experiencia premium.</p>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Tour guiado por la bodega</li>
-                    <li>Degustación de 3 vinos</li>
-                    <li>Visita a la sala de arte</li>
+                    <li data-i18n="modal5.include1">Tour guiado por la bodega</li>
+                    <li data-i18n="modal5.include2">Degustación de 3 vinos</li>
+                    <li data-i18n="modal5.include3">Visita a la sala de arte</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal5.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal5.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -333,25 +338,25 @@ Bonfanti, Tempus Alba, Ciudad
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content experience-modal">
             <div class="modal-header">
-                <h5 class="modal-title" id="modalPaquete6Label">Experiencia "Los Toneles"</h5>
+                <h5 class="modal-title" id="modalPaquete6Label" data-i18n="modal6.title">Experiencia "Los Toneles"</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <img src="assets/images/content/pexels-valeriya-1123260.jpg" class="modal-img" alt="Experiencia Los Toneles">
             <div class="modal-body">
-                <p><i class="bi bi-clock me-2"></i><strong>Duración:</strong> 7 horas</p>
-                <p><i class="bi bi-geo-alt me-2"></i><strong>Punto de encuentro:</strong> A coordinar según hotel/alojamiento</p>
-                <p>Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Recorrido histórico por bodegas centenarias con arquitectura tradicional mendocina.</p>
-                <h6 class="mt-3">Incluye:</h6>
+                <p><i class="bi bi-clock me-2"></i><strong data-i18n="common.duration">Duración:</strong> <span data-i18n="modal6.duration_value">7 horas</span></p>
+                <p><i class="bi bi-geo-alt me-2"></i><strong data-i18n="common.meeting">Punto de encuentro:</strong> <span data-i18n="common.meeting_value">A coordinar según hotel/alojamiento</span></p>
+                <p data-i18n="modal6.description">Fusce placerat luctus mi, a rutrum ipsum interdum nec. Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit, et ornare tortor. Recorrido histórico por bodegas centenarias con arquitectura tradicional mendocina.</p>
+                <h6 class="mt-3" data-i18n="common.includes">Incluye:</h6>
                 <ul>
-                    <li>Transporte privado ida y vuelta</li>
-                    <li>Guía bilingüe (español / inglés / portugués)</li>
-                    <li>Degustación en 2 bodegas históricas</li>
-                    <li>Almuerzo incluido</li>
+                    <li data-i18n="modal6.include1">Transporte privado ida y vuelta</li>
+                    <li data-i18n="common.bilingual_guide">Guía bilingüe (español / inglés / portugués)</li>
+                    <li data-i18n="modal6.include3">Degustación en 2 bodegas históricas</li>
+                    <li data-i18n="modal6.include4">Almuerzo incluido</li>
                 </ul>
             </div>
             <div class="modal-footer">
-                <a href="https://wa.me/5492614603906" target="_blank" class="btn btn-info-custom">Consultar por WhatsApp</a>
-                <a href="#formulario-contacto" class="btn btn-custom btn-reservar">Reservar</a>
+                <a href="#" target="_blank" class="btn btn-info-custom" data-i18n="common.whatsapp" data-wa-msg="modal6.whatsapp_consult">Consultar por WhatsApp</a>
+                <a href="#" target="_blank" class="btn btn-custom" data-i18n="common.whatsapp_buy" data-wa-msg="modal6.whatsapp_buy">Comprar por WhatsApp</a>
             </div>
         </div>
     </div>
@@ -360,7 +365,7 @@ Bonfanti, Tempus Alba, Ciudad
     <!-- Testimonios -->
 <section class="testimonios" id="clientes">
     <div class="container">
-        <h2 class="mb-4">Testimonials from our passengers</h2>
+        <h2 class="mb-4" data-i18n="testimonials.title">Testimonials from our passengers</h2>
         <div class="chat">
             <!-- Mensaje a la izquierda -->
             <div class="message left">
@@ -379,6 +384,7 @@ Bonfanti, Tempus Alba, Ciudad
             </div>
             <div class="message left">
                 <p>"Morbi scelerisque eros at tristique dapibus. Donec ac cursus elit."</p>
+            </div>
         </div>
     </div>
 </section>
@@ -390,35 +396,35 @@ Bonfanti, Tempus Alba, Ciudad
 
             <div class="card shadow-lg border-0 rounded-4">
                 <div class="card-body p-4">
-                    <h3 class="text-center mb-4">Contacto</h3>
+                    <h3 class="text-center mb-4" data-i18n="contact.title">Contacto</h3>
 
 <form id="form-contacto">
                         <!-- Nombre -->
                         <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre *</label>
-                            <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" placeholder="Tu nombre" required>
+                            <label for="nombre" class="form-label" data-i18n="contact.name_label">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control form-control-lg" placeholder="Tu nombre" data-i18n-placeholder="contact.name_placeholder" required>
                         </div>
 
                         <!-- Email -->
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email *</label>
-                            <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Tu email" required>
+                            <label for="email" class="form-label" data-i18n="contact.email_label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Tu email" data-i18n-placeholder="contact.email_placeholder" required>
                         </div>
 
                         <!-- Teléfono -->
                         <div class="mb-3">
-                            <label for="telefono" class="form-label">Teléfono *</label>
+                            <label for="telefono" class="form-label" data-i18n="contact.phone_label">Teléfono *</label>
                             <input type="tel" id="telefono" name="telefono" class="form-control form-control-lg" placeholder="+54 9 261 ..." pattern="[0-9+ -]{6,}" required>
                         </div>
 
                         <!-- Mensaje -->
                         <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje *</label>
-                            <textarea id="mensaje" name="mensaje" class="form-control form-control-lg" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                            <label for="mensaje" class="form-label" data-i18n="contact.message_label">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" class="form-control form-control-lg" rows="4" placeholder="Escribe tu mensaje" data-i18n-placeholder="contact.message_placeholder" required></textarea>
                         </div>
 
                         <!-- Botón -->
-                        <button type="submit" class="btn btn-dark w-100 btn-lg rounded-3">
+                        <button type="submit" class="btn btn-dark w-100 btn-lg rounded-3" data-i18n="contact.submit">
                             Enviar mensaje
                         </button>
 
@@ -433,6 +439,7 @@ Bonfanti, Tempus Alba, Ciudad
     </div>
 </section>
 
+<script src="i18n.js"></script>
 <script src="contacto.js"></script>
 
    <!-- Footer -->
@@ -456,7 +463,7 @@ Bonfanti, Tempus Alba, Ciudad
             <!-- Logo y texto -->
             <div class="col-12 col-md-6 text-center text-md-end">
                 <a href="#header"><img src="assets/images/logos/logo_footer.png" alt="Logo HM!" class="footer-logo" width="75" height="75"></a>
-                <p class="mt-2 mb-0">Thank you for visiting!</p>
+                <p class="mt-2 mb-0" data-i18n="footer.thanks">Thank you for visiting!</p>
             </div>
         </div>
     </div>
@@ -468,41 +475,6 @@ Bonfanti, Tempus Alba, Ciudad
         //.then(() => alert('Texto copiado: ' + text))
         .catch(err => console.error('Error al copiar: ', err));
     }
-  </script>
-
-  <script>
-    // Botones "Reservar" dentro de los modales de experiencias:
-    // 1) Cierran el modal correctamente
-    // 2) Recién cuando terminó de cerrarse, hacen scroll suave al formulario
-    document.querySelectorAll('.btn-reservar').forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            var modalEl = btn.closest('.modal');
-            var target = document.querySelector('#formulario-contacto');
-
-            if (modalEl) {
-                var modalInstance = bootstrap.Modal.getInstance(modalEl);
-
-                // Cuando el modal terminó de ocultarse, recién ahí hacemos scroll
-                modalEl.addEventListener('hidden.bs.modal', function onHidden() {
-                    modalEl.removeEventListener('hidden.bs.modal', onHidden);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth' });
-                    }
-                });
-
-                if (modalInstance) {
-                    modalInstance.hide();
-                } else if (target) {
-                    // Fallback por si no había instancia de modal activa
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            } else if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        });
-    });
   </script>
 
     <!-- Scripts de Bootstrap -->

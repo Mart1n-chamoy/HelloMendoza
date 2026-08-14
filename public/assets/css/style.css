@@ -177,6 +177,37 @@ font-weight: bold;
 }
 
 
+/* Selector de idioma */
+.lang-switcher {
+    display: flex;
+    gap: 6px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.lang-switcher button {
+    background: transparent;
+    border: 1.5px solid #8A434E;
+    color: #e4a1ab;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-switcher button:hover {
+    background-color: #8A434E;
+    color: white;
+}
+
+.lang-switcher button.active {
+    background-color: #8A434E;
+    color: white;
+}
+
 /* Contenedor para el botón de copiar */
 .copy-container {
     display: flex; /* Usa Flexbox para alinear elementos */

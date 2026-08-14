@@ -1,8 +1,10 @@
 document.getElementById("form-contacto").addEventListener("submit", async (e) => {
   e.preventDefault();
 
+  const t = window.HM_I18N ? window.HM_I18N.t : (key) => key;
+
   const resultadoDiv = document.getElementById("resultado");
-  resultadoDiv.innerText = "Enviando mensaje...";
+  resultadoDiv.innerText = t("contact.sending");
   resultadoDiv.style.color = "black";
 
   const data = {
@@ -24,17 +26,16 @@ document.getElementById("form-contacto").addEventListener("submit", async (e) =>
     const json = await respuesta.json();
 
     if (json.ok) {
-      resultadoDiv.innerText = "✅ Mensaje enviado correctamente.";
+      resultadoDiv.innerText = t("contact.success");
       resultadoDiv.style.color = "green";
       document.getElementById("form-contacto").reset();
     } else {
-      resultadoDiv.innerText = "❌ Error al enviar mensaje.";
+      resultadoDiv.innerText = t("contact.error_server");
       resultadoDiv.style.color = "red";
     }
 
   } catch (error) {
-    resultadoDiv.innerText = "❌ Error de conexión con el servidor.";
+    resultadoDiv.innerText = t("contact.error_conn");
     resultadoDiv.style.color = "red";
   }
 });
-
