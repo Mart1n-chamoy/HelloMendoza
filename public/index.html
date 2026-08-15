@@ -15,6 +15,25 @@
 
 </head>
 <body>
+    <!-- Modal de bienvenida: elegir idioma -->
+    <div class="modal fade" id="modalIdioma" tabindex="-1" aria-labelledby="modalIdiomaLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-3">
+                <div class="modal-body">
+                    <h5 class="mb-1">¡Bienvenido a Hello Mendoza!</h5>
+                    <p class="text-muted mb-1">Elegí tu idioma</p>
+                    <p class="text-muted mb-1">Choose your language</p>
+                    <p class="text-muted mb-4">Escolha seu idioma</p>
+                    <div class="d-flex flex-column gap-2">
+                        <button type="button" class="btn btn-custom btn-lg" data-lang-choice="es">🇦🇷 Español</button>
+                        <button type="button" class="btn btn-custom btn-lg" data-lang-choice="en">🇺🇸 English</button>
+                        <button type="button" class="btn btn-custom btn-lg" data-lang-choice="pt">🇧🇷 Português</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="header-contact bg-transparent py-2" id="header">
         <div class="container d-flex justify-content-between">
             <div class="copy-container">
@@ -26,7 +45,7 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark w-100 position-relative" id="nav">
     <div class="container">
-        <a class="navbar-brand" href="/index.html"><img src="assets/images/logos/Logo_Hello_Mendoza.png" width="100" height="100" alt="Logo"></a>
+        <a class="navbar-brand" href="/public/index.html"><img src="assets/images/logos/Logo_Hello_Mendoza.png" width="100" height="100" alt="Logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
         </button>

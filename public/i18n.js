@@ -464,5 +464,20 @@ Em seguida, faremos um almoço harmonizado em um restaurante de vinícola que se
     document.querySelectorAll(".lang-switcher button").forEach((btn) => {
       btn.addEventListener("click", () => setLang(btn.getAttribute("data-lang")));
     });
+
+    // Cartel de bienvenida: en cada visita le preguntamos en qué idioma
+    // quiere navegar (no se guarda "ya elegido", así que vuelve a aparecer siempre).
+    const modalEl = document.getElementById("modalIdioma");
+    if (modalEl && window.bootstrap) {
+      const welcomeModal = new bootstrap.Modal(modalEl);
+      welcomeModal.show();
+
+      modalEl.querySelectorAll("[data-lang-choice]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          setLang(btn.getAttribute("data-lang-choice"));
+          welcomeModal.hide();
+        });
+      });
+    }
   });
 })();
