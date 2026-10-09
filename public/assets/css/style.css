@@ -102,6 +102,26 @@ object-fit:cover; /* Imagen recortada */
 
 }
 
+/* Carrusel de fotos dentro de cada tarjeta de experiencia */
+.card-carousel {
+    border-radius: 10px;
+    overflow: hidden; /* recorta las esquinas de las fotos */
+}
+
+.card-carousel .carousel-control-prev,
+.card-carousel .carousel-control-next {
+    width: 15%;
+    opacity: 0.9;
+}
+
+.card-carousel .carousel-control-prev-icon,
+.card-carousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    padding: 12px;
+    background-size: 55%;
+}
+
 .btn-outline-light {
 border-width: 2px; /* Contorno más marcado */
 font-weight: bold;
