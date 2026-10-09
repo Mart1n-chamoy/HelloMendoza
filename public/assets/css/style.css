@@ -122,6 +122,95 @@ object-fit:cover; /* Imagen recortada */
     background-size: 55%;
 }
 
+/* Carrusel de fotos dentro de los modales de experiencias */
+.modal-carousel .carousel-control-prev,
+.modal-carousel .carousel-control-next {
+    width: 10%;
+    opacity: 0.9;
+}
+
+.modal-carousel .carousel-control-prev-icon,
+.modal-carousel .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    padding: 14px;
+    background-size: 55%;
+}
+
+.modal-carousel .modal-img.zoomable {
+    cursor: zoom-in;
+}
+
+/* Lightbox: overlay para ver la foto agrandada */
+.img-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-lightbox.active {
+    display: flex;
+}
+
+.img-lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.img-lightbox .lightbox-close,
+.img-lightbox .lightbox-prev,
+.img-lightbox .lightbox-next {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.img-lightbox .lightbox-close:hover,
+.img-lightbox .lightbox-prev:hover,
+.img-lightbox .lightbox-next:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.img-lightbox .lightbox-close {
+    top: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.img-lightbox .lightbox-prev,
+.img-lightbox .lightbox-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.img-lightbox .lightbox-prev {
+    left: 20px;
+}
+
+.img-lightbox .lightbox-next {
+    right: 20px;
+}
+
 .btn-outline-light {
 border-width: 2px; /* Contorno más marcado */
 font-weight: bold;
