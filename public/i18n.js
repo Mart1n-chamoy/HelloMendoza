@@ -70,10 +70,10 @@ const TRANSLATIONS = {
 Seguidamente nos dirigimos a la tercera bodega donde realizaremos el almuerzo maridado con vinos para apreciar con todos los sentidos. <br><br>
 Este tour es apto para disfrutar en todas las épocas del año ya que Mendoza presenta diferentes paisajes y productos regionales en cada estación para el deleite de nuestros visitantes. <br><br>
 <h6 class="mt-3">Bodegas sugeridas:</h6> Bonfanti, Vistalba, Benegas, Penedo Borges, Caelum, Mendel, Budeguer, Lorca, Renacer, Dante Robino, Norton, Chandon, Huarpe, Piatelli, Las Perdices, Susana Balbo, Weinert
-<h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba, Susana Balbo`,
     "modal1.include1": "Transporte privado ida y vuelta",
     "modal1.include3": "Degustación en 3 bodegas",
-    "modal1.include4": "Almuerzo o picada regional",
+    "modal1.include4": "Almuerzo",
 
     "modal2.title": "Maipú, tour por la cuna del vino (2 bodegas y 1 olivícola)",
     "modal2.duration_value": "8 horas",
@@ -84,7 +84,7 @@ Finalizaremos con un almuerzo maridado con los vinos de la bodega y un menú pen
 <h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba, Ciudad`,
     "modal2.include1": "Transporte privado ida y vuelta",
     "modal2.include3": "Degustación en bodega + olivícola",
-    "modal2.include4": "Almuerzo incluido",
+    "modal2.include4": "Almuerzo",
 
     "modal3.title": "Valle de Uco, tour de imponente paisaje cordillerano.",
     "modal3.duration_value": "10 horas",
@@ -197,10 +197,10 @@ Luego realizaremos el almuerzo con maridaje en un restaurante de bodega que se d
 Next, we'll head to the third winery for a wine-paired lunch — a feast for all the senses. <br><br>
 This tour is perfect any time of year, since Mendoza offers different landscapes and regional produce in every season, for the delight of our visitors. <br><br>
 <h6 class="mt-3">Suggested wineries:</h6> Bonfanti, Vistalba, Benegas, Penedo Borges, Caelum, Mendel, Budeguer, Lorca, Renacer, Dante Robino, Norton, Chandon, Huarpe, Piatelli, Las Perdices, Susana Balbo, Weinert
-<h6 class="mt-3">Great tour for families with kids:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Great tour for families with kids:</h6> Bonfanti, Tempus Alba, Susana Balbo`,
     "modal1.include1": "Round-trip private transport",
     "modal1.include3": "Tasting at 3 wineries",
-    "modal1.include4": "Lunch or regional sharing board",
+    "modal1.include4": "Lunch",
 
     "modal2.title": "Maipú: a tour through the cradle of wine (2 wineries and 1 olive grove)",
     "modal2.duration_value": "8 hours",
@@ -324,10 +324,10 @@ We'll then enjoy a wine-paired lunch at a winery restaurant known for its cuttin
 Em seguida, seguimos para a terceira vinícola, onde faremos um almoço harmonizado com vinhos para apreciar com todos os sentidos. <br><br>
 Este passeio é ideal em qualquer época do ano, já que Mendoza apresenta paisagens e produtos regionais diferentes em cada estação, para o deleite dos visitantes. <br><br>
 <h6 class="mt-3">Vinícolas sugeridas:</h6> Bonfanti, Vistalba, Benegas, Penedo Borges, Caelum, Mendel, Budeguer, Lorca, Renacer, Dante Robino, Norton, Chandon, Huarpe, Piatelli, Las Perdices, Susana Balbo, Weinert
-<h6 class="mt-3">Passeio ideal para crianças:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Passeio ideal para crianças:</h6> Bonfanti, Tempus Alba, Susana Balbo`,
     "modal1.include1": "Transporte privado ida e volta",
     "modal1.include3": "Degustação em 3 vinícolas",
-    "modal1.include4": "Almoço ou tábua regional",
+    "modal1.include4": "Almoço",
 
     "modal2.title": "Maipú: um tour pelo berço do vinho (2 vinícolas e 1 olivícola)",
     "modal2.duration_value": "8 horas",
