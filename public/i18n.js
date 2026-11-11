@@ -80,8 +80,7 @@ Este tour es apto para disfrutar en todas las épocas del año ya que Mendoza pr
     "modal2.description": `Situada a unos 20 minutos de la ciudad de Mendoza, exploraremos esta región con vinos de culto de los cuales el mundo no deja de hablar. <br><br>
 Visitaremos bodegas con tradición ferroviaria y de inmigrantes ligada a la vitivinicultura y también bodegas boutique con vinos de autor donde degustaremos sus vinos, participaremos de diferentes experiencias y conoceremos sus instalaciones. También visitaremos una olivícola de la región para aprender sobre los beneficios de consumir aceite de oliva. <br><br>
 Finalizaremos con un almuerzo maridado con los vinos de la bodega y un menú pensado para destacar las virtudes de cada expresión varietal o blend en una auténtica experiencia enogastronómica mendocina. <br><br>
-<h6 class="mt-3">Bodegas y olivícolas sugeridas:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos (para tour caro). <br><br>
-<h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Bodegas y olivícolas sugeridas:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos.`,
     "modal2.include1": "Transporte privado ida y vuelta",
     "modal2.include3": "Degustación en bodega + olivícola",
     "modal2.include4": "Almuerzo",
@@ -95,7 +94,7 @@ Participaremos de una experiencia sensorial que combina vino, naturaleza y vista
 Luego realizaremos el almuerzo con maridaje en un restaurante de bodega que se destaca por su arquitectura de vanguardia y su entorno natural, creando una experiencia memorable. <br><br>
 <h6 class="mt-3">Bodegas sugeridas tour corto:</h6> Atamisque, Salentein, Andeluna, La Azul, Masi, Domaine Bousquet. <br><br>
 <h6 class="mt-3">Bodegas sugeridas tour largo:</h6> Zuccardi, Alfa Crux, Clos de Los Siete, The Vines, Casa de Uco, Bemberg, Alpasión, Piedra Negra. <br><br>
-<h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Tour ideal con niños:</h6> Bonfanti, Tempus Alba`,
     "modal3.include1": "Transporte privado ida y vuelta",
     "modal3.include3": "Degustación en 2 bodegas premium",
     "modal3.include4": "Almuerzo gourmet con maridaje",
@@ -207,8 +206,7 @@ This tour is perfect any time of year, since Mendoza offers different landscapes
     "modal2.description": `Located about 20 minutes from the city of Mendoza, we'll explore a region behind cult wines the world can't stop talking about. <br><br>
 We'll visit wineries with a railway and immigrant heritage tied to winemaking, as well as boutique wineries with signature wines, where we'll taste, take part in different experiences, and tour the facilities. We'll also visit a local olive grove to learn about the benefits of olive oil. <br><br>
 We'll wrap up with a wine-paired lunch and a menu designed to highlight the character of each varietal or blend, for a true Mendoza wine-and-food experience. <br><br>
-<h6 class="mt-3">Suggested wineries and olive groves:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos (for a premium tour). <br><br>
-<h6 class="mt-3">Great tour for families with kids:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Suggested wineries and olive groves:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos.`,
     "modal2.include1": "Round-trip private transport",
     "modal2.include3": "Tasting at winery + olive grove",
     "modal2.include4": "Lunch included",
@@ -222,7 +220,7 @@ We'll take part in a sensory experience that blends wine, nature and privileged 
 We'll then enjoy a wine-paired lunch at a winery restaurant known for its cutting-edge architecture and natural surroundings, for a truly memorable experience. <br><br>
 <h6 class="mt-3">Suggested wineries (short tour):</h6> Atamisque, Salentein, Andeluna, La Azul, Masi, Domaine Bousquet. <br><br>
 <h6 class="mt-3">Suggested wineries (long tour):</h6> Zuccardi, Alfa Crux, Clos de Los Siete, The Vines, Casa de Uco, Bemberg, Alpasión, Piedra Negra. <br><br>
-<h6 class="mt-3">Great tour for families with kids:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Great tour for families with kids:</h6> Bonfanti, Tempus Alba`,
     "modal3.include1": "Round-trip private transport",
     "modal3.include3": "Tasting at 2 premium wineries",
     "modal3.include4": "Gourmet wine-paired lunch",
@@ -334,8 +332,7 @@ Este passeio é ideal em qualquer época do ano, já que Mendoza apresenta paisa
     "modal2.description": `Localizada a cerca de 20 minutos da cidade de Mendoza, vamos explorar essa região de vinhos cult dos quais o mundo não para de falar. <br><br>
 Visitaremos vinícolas com tradição ferroviária e de imigrantes ligada à vitivinicultura, além de vinícolas boutique com vinhos de autor, onde faremos degustações, participaremos de diferentes experiências e conheceremos as instalações. Também visitaremos uma olivícola da região para aprender sobre os benefícios do azeite de oliva. <br><br>
 Encerraremos com um almoço harmonizado com os vinhos da vinícola e um cardápio pensado para destacar as virtudes de cada varietal ou blend, em uma autêntica experiência enogastronômica mendocina. <br><br>
-<h6 class="mt-3">Vinícolas e olivícolas sugeridas:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos (para tour premium). <br><br>
-<h6 class="mt-3">Passeio ideal para crianças:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Vinícolas e olivícolas sugeridas:</h6> Trapiche, La Rural, Benegas, Esencia 1870, Carinae, Cinco Sentidos, Martino Wines, Manuel Villafañe, Finca Sabina, Laur, Maguay, Pasrai, Corazón de Lunlunta, Alma Oliva Finca Agostino, Tempus Alba, Santa Julia, El Enemigo, Mil Suelos (para tour premium).`,
     "modal2.include1": "Transporte privado ida e volta",
     "modal2.include3": "Degustação em vinícola + olivícola",
     "modal2.include4": "Almoço incluído",
@@ -349,7 +346,7 @@ Participaremos de uma experiência sensorial que combina vinho, natureza e vista
 Em seguida, faremos um almoço harmonizado em um restaurante de vinícola que se destaca por sua arquitetura de vanguarda e seu entorno natural, criando uma experiência memorável. <br><br>
 <h6 class="mt-3">Vinícolas sugeridas (tour curto):</h6> Atamisque, Salentein, Andeluna, La Azul, Masi, Domaine Bousquet. <br><br>
 <h6 class="mt-3">Vinícolas sugeridas (tour longo):</h6> Zuccardi, Alfa Crux, Clos de Los Siete, The Vines, Casa de Uco, Bemberg, Alpasión, Piedra Negra. <br><br>
-<h6 class="mt-3">Passeio ideal para crianças:</h6> Bonfanti, Tempus Alba, Ciudad`,
+<h6 class="mt-3">Passeio ideal para crianças:</h6> Bonfanti, Tempus Alba`,
     "modal3.include1": "Transporte privado ida e volta",
     "modal3.include3": "Degustação em 2 vinícolas premium",
     "modal3.include4": "Almoço gourmet harmonizado",
