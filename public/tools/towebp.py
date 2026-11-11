@@ -15,7 +15,7 @@ for f in sorted(os.listdir(src)):
     if name == "og-image":
         big.save(os.path.join(dst, name + ".jpg"), "JPEG", quality=84, optimize=True, progressive=True)
         continue
-    big.save(os.path.join(dst, name + ".webp"), "WEBP", quality=80, method=6)
+    big.save(os.path.join(dst, name + "-lg.webp"), "WEBP", quality=80, method=6)
     sm = im.copy()
     sm.thumbnail((800, 10000), Image.LANCZOS)
     sm.save(os.path.join(dst, name + "-sm.webp"), "WEBP", quality=78, method=6)

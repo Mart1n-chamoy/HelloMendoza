@@ -39,7 +39,7 @@ Esto reescribe `index.html`, `en/index.html`, `pt/index.html`, `sitemap.xml` y `
 
 ## Imágenes
 
-Las imágenes son las **fotos y el logo reales** de Hello Mendoza (excepto las 3 fotos de guías, que son siluetas hasta cargar las reales). Para cambiar una, reemplazala con el **mismo nombre** en `assets/img/`. Las fotos de cada tour se leen de la lista `alts` en `src/i18n/*.mjs`: la cantidad de textos define cuántas fotos (`tour-<id>-1`, `-2`…) tiene el carrusel; Potrerillos y Salentein tienen 1 sola por ahora:
+Las imágenes son las **fotos y el logo reales** de Hello Mendoza (excepto las 3 fotos de guías, que son siluetas hasta cargar las reales). Cada foto tiene dos archivos: `nombre-lg.webp` (grande) y `nombre-sm.webp` (800 px, para celular). Para cambiar una, reemplazá los dos con el **mismo nombre** en `assets/img/`. Las fotos de cada tour se leen de la lista `alts` en `src/i18n/*.mjs`: la cantidad de textos define cuántas fotos (`tour-<id>-1`, `-2`…) tiene el carrusel; Potrerillos y Salentein tienen 1 sola por ahora:
 
 | Archivo | Uso | Tamaño sugerido |
 |---|---|---|

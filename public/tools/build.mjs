@@ -21,7 +21,7 @@ const isPh = (s) => /^\[.*\]$/.test(s);
 const url = (L) => `${config.siteUrl}/${L.path}`;
 
 function img(name, alt, { sizes = '(min-width: 1100px) 33vw, (min-width: 700px) 50vw, 100vw', cls = '', w = 1600, h = 1067, base, eager = false } = {}) {
-  return `<img class="${cls}" src="${base}assets/img/${name}-sm.webp" srcset="${base}assets/img/${name}-sm.webp 800w, ${base}assets/img/${name}.webp ${w}w" sizes="${sizes}" width="${w}" height="${h}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}>`;
+  return `<img class="${cls}" src="${base}assets/img/${name}-sm.webp" srcset="${base}assets/img/${name}-sm.webp 800w, ${base}assets/img/${name}-lg.webp ${w}w" sizes="${sizes}" width="${w}" height="${h}" alt="${esc(alt)}" ${eager ? 'fetchpriority="high"' : 'loading="lazy" decoding="async"'}>`;
 }
 
 function page(L) {
@@ -114,8 +114,8 @@ ${LANGS.filter((o) => o !== L).map((o) => `<meta property="og:locale:alternate" 
 <link rel="apple-touch-icon" href="${base}assets/img/apple-touch-icon.png">
 <link rel="preload" href="${base}assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${base}assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="${base}assets/img/hero-mobile-sm.webp" imagesrcset="${base}assets/img/hero-mobile-sm.webp 800w, ${base}assets/img/hero-mobile.webp 1080w" imagesizes="100vw" media="(max-width: 699px)" fetchpriority="high">
-<link rel="preload" as="image" href="${base}assets/img/hero-desktop.webp" imagesrcset="${base}assets/img/hero-desktop-sm.webp 800w, ${base}assets/img/hero-desktop.webp 1920w" imagesizes="100vw" media="(min-width: 700px)" fetchpriority="high">
+<link rel="preload" as="image" href="${base}assets/img/hero-mobile-sm.webp" imagesrcset="${base}assets/img/hero-mobile-sm.webp 800w, ${base}assets/img/hero-mobile-lg.webp 1080w" imagesizes="100vw" media="(max-width: 699px)" fetchpriority="high">
+<link rel="preload" as="image" href="${base}assets/img/hero-desktop-lg.webp" imagesrcset="${base}assets/img/hero-desktop-sm.webp 800w, ${base}assets/img/hero-desktop-lg.webp 1920w" imagesizes="100vw" media="(min-width: 700px)" fetchpriority="high">
 <link rel="stylesheet" href="${base}assets/css/styles.css?v=${VERSION}">
 <script>(function(d){d.classList.add('js');try{if(matchMedia('(prefers-reduced-motion: no-preference)').matches)d.classList.add('anim');var s=localStorage.getItem('hm-lang'),m={es:'',en:'en/',pt:'pt/'};if(${L.code === 'es' ? 'true' : 'false'}&&s&&s!=='es'&&m[s]&&!/[?&]lang=es/.test(location.search))location.replace('${base}'+m[s]+location.hash)}catch(e){}})(document.documentElement)</script>
 <script type="application/ld+json">${JSON.stringify(jsonld)}</script>
@@ -144,8 +144,8 @@ ${sprite()}
 <main id="main">
 <section class="hero" id="top" aria-labelledby="hero-title">
   <picture class="hero__media">
-    <source media="(max-width: 699px)" srcset="${base}assets/img/hero-mobile-sm.webp 800w, ${base}assets/img/hero-mobile.webp 1080w" sizes="100vw">
-    <img src="${base}assets/img/hero-desktop.webp" srcset="${base}assets/img/hero-desktop-sm.webp 800w, ${base}assets/img/hero-desktop.webp 1920w" sizes="100vw" width="1920" height="1080" alt="${esc(L.hero.imgAlt)}" fetchpriority="high">
+    <source media="(max-width: 699px)" srcset="${base}assets/img/hero-mobile-sm.webp 800w, ${base}assets/img/hero-mobile-lg.webp 1080w" sizes="100vw">
+    <img src="${base}assets/img/hero-desktop-lg.webp" srcset="${base}assets/img/hero-desktop-sm.webp 800w, ${base}assets/img/hero-desktop-lg.webp 1920w" sizes="100vw" width="1920" height="1080" alt="${esc(L.hero.imgAlt)}" fetchpriority="high">
   </picture>
   <div class="hero__in wrap">
     <h1 class="hero__title" id="hero-title">${tHtml(L.hero.title)}</h1>

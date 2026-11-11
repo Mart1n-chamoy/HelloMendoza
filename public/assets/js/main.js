@@ -157,7 +157,7 @@
   var gallery = [];
   var tourById = {};
   D.tours.forEach(function (t) { tourById[t.id] = t; });
-  var imgSrc = function (id, n, sm) { return D.base + 'assets/img/tour-' + id + '-' + n + (sm ? '-sm' : '') + '.webp'; };
+  var imgSrc = function (id, n, sm) { return D.base + 'assets/img/tour-' + id + '-' + n + (sm ? '-sm' : '-lg') + '.webp'; };
 
   function renderTour(t) {
     var d = T.detail;
