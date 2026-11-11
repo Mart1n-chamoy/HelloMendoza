@@ -441,3 +441,23 @@ a.dropdown-item:hover{
     border-top: none;
     padding: 1rem 1.75rem 1.5rem;
 }
+
+/* Logo del navbar: más grande y desplazado hacia la izquierda */
+.navbar-brand img {
+    width: 100px;
+    height: 100px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        margin-left: -90px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+
+    .navbar-brand img {
+        width: 150px;
+        height: 150px;
+    }
+}
