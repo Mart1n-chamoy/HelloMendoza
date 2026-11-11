@@ -41,7 +41,7 @@ function page(L) {
     description: L.meta.description,
     url: url(L),
     image: `${config.siteUrl}/assets/img/og-image.jpg`,
-    logo: `${config.siteUrl}/assets/img/logo.svg`,
+    logo: `${config.siteUrl}/assets/img/logo.png`,
     telephone: '+5492614603906',
     ...(isPh(config.email) ? {} : { email: config.email }),
     address: {
@@ -110,7 +110,7 @@ ${LANGS.map((o) => `<link rel="alternate" hreflang="${o.code}" href="${url(o)}">
 <meta property="og:locale" content="${L.ogLocale}">
 ${LANGS.filter((o) => o !== L).map((o) => `<meta property="og:locale:alternate" content="${o.ogLocale}">`).join('\n')}
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="${base}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="${base}assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="${base}assets/img/apple-touch-icon.png">
 <link rel="preload" href="${base}assets/fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="${base}assets/fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
@@ -127,8 +127,7 @@ ${sprite()}
 <header class="bar" data-bar>
   <div class="bar__in wrap">
     <a class="brand" href="#top" aria-label="${esc(L.nav.home)}">
-      <img class="brand__img brand__img--light" src="${base}assets/img/logo-light.svg" alt="Hello Mendoza" width="168" height="44">
-      <img class="brand__img brand__img--dark" src="${base}assets/img/logo.svg" alt="" width="168" height="44">
+      <img class="brand__img" src="${base}assets/img/logo.png" alt="Hello Mendoza" width="96" height="96">
     </a>
     <nav class="nav" aria-label="${{ es: 'Menú principal', en: 'Main menu', pt: 'Menu principal' }[L.code]}">
       <ul class="nav__list" id="nav-list">
@@ -388,7 +387,7 @@ ${sprite()}
   <div class="wrap">
     <div class="foot__top">
       <div class="foot__brand">
-        <img src="${base}assets/img/logo-light.svg" alt="Hello Mendoza" width="168" height="44" loading="lazy">
+        <img src="${base}assets/img/logo.png" alt="Hello Mendoza" width="96" height="96" loading="lazy">
         <p class="foot__slogan">${esc(L.slogan)}</p>
         ${langSwitch('lang--foot')}
       </div>

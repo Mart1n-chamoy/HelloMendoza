@@ -39,7 +39,7 @@ Esto reescribe `index.html`, `en/index.html`, `pt/index.html`, `sitemap.xml` y `
 
 ## Imágenes
 
-Las imágenes actuales son **ilustraciones provisorias** en la paleta de la marca. Reemplazalas por fotos reales con el **mismo nombre** en `assets/img/`:
+Las imágenes son las **fotos y el logo reales** de Hello Mendoza (excepto las 3 fotos de guías, que son siluetas hasta cargar las reales). Para cambiar una, reemplazala con el **mismo nombre** en `assets/img/`. Las fotos de cada tour se leen de la lista `alts` en `src/i18n/*.mjs`: la cantidad de textos define cuántas fotos (`tour-<id>-1`, `-2`…) tiene el carrusel; Potrerillos y Salentein tienen 1 sola por ahora:
 
 | Archivo | Uso | Tamaño sugerido |
 |---|---|---|
@@ -49,7 +49,7 @@ Las imágenes actuales son **ilustraciones provisorias** en la paleta de la marc
 | `custom-tour.webp` | bloque "tour a medida" | 1600×1067 |
 | `gallery-1..6.webp` | galería (1 y 4 son verticales) | 1200×1500 y 1200×800 |
 | `guide-1..3.webp` | fotos de los guías | 800×1000 |
-| `logo.svg` / `logo-light.svg` | logo sobre fondo claro / oscuro | — |
+| `logo.png` | logo redondo (sirve sobre fondo claro y oscuro) | 192×193 |
 | `og-image.jpg` | imagen al compartir en redes | 1200×630 |
 
 Cada imagen tiene versión grande y `-sm` (800 px de ancho). Podés convertir a WebP con [Squoosh](https://squoosh.app). Si cambiás el contenido de una foto, actualizá su texto alternativo en `src/i18n/*.mjs`.

@@ -172,7 +172,7 @@
     var waMsg = fmt(T.wa.tour, { tour: t.name });
     sheet.innerHTML =
       '<button type="button" class="sheet__close" data-close aria-label="' + esc(d.close) + '">' + icon('x') + '</button>' +
-      '<div class="car" data-car>' +
+      '<div class="car' + (t.alts.length < 2 ? ' car--single' : '') + '" data-car>' +
         '<div class="car__track" data-track tabindex="0" aria-label="' + esc(t.name) + '">' + slides + '</div>' +
         '<button type="button" class="car__btn car__prev" data-prev aria-label="' + esc(d.prev) + '" disabled>' + icon('left') + '</button>' +
         '<button type="button" class="car__btn car__next" data-next aria-label="' + esc(d.next) + '">' + icon('right') + '</button>' +
