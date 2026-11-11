@@ -1,0 +1,7 @@
+# Las fotos se reemplazan con el mismo nombre: caché corta para que el cambio se vea enseguida.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 hour"
+  ExpiresByType image/jpeg "access plus 1 hour"
+  ExpiresByType image/png "access plus 1 hour"
+</IfModule>

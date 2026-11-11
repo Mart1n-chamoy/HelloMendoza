@@ -2,7 +2,8 @@
    Sin dependencias. Los textos vienen de <script id="hm-data"> generado por tools/build.mjs */
 (function () {
   'use strict';
-  var D = JSON.parse(document.getElementById('hm-data').textContent);
+  var D = window.HM_DATA;
+  if (!D) return;
   var T = D.t;
   var $ = function (s, c) { return (c || document).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
@@ -157,32 +158,31 @@
   var gallery = [];
   var tourById = {};
   D.tours.forEach(function (t) { tourById[t.id] = t; });
-  var imgSrc = function (id, n, sm) { return D.base + 'assets/img/tour-' + id + '-' + n + (sm ? '-sm' : '-lg') + '.webp'; };
 
   function renderTour(t) {
     var d = T.detail;
-    var slides = t.alts.map(function (alt, i) {
-      return '<button type="button" class="car__slide" data-zoom="' + i + '" aria-label="' + esc(d.enlarge + ': ' + alt) + '">' +
-        '<img src="' + imgSrc(t.id, i + 1, true) + '" srcset="' + imgSrc(t.id, i + 1, true) + ' 800w, ' + imgSrc(t.id, i + 1) + ' 1600w" sizes="(min-width: 1000px) 980px, 100vw" width="1600" height="1067" alt="' + esc(alt) + '"' + (i ? ' loading="lazy"' : '') + '></button>';
+    var slides = t.photos.map(function (f, i) {
+      return '<button type="button" class="car__slide" data-zoom="' + i + '" aria-label="' + esc(d.enlarge + ': ' + f.alt) + '">' +
+        '<img src="' + D.photo(f.archivo) + '" width="1600" height="1067" alt="' + esc(f.alt) + '"' + (i ? ' loading="lazy"' : '') + ' onerror="this.classList.add(\'is-missing\')"></button>';
     }).join('');
-    var dots = t.alts.map(function (_, i) { return '<span' + (i ? '' : ' class="on"') + '></span>'; }).join('');
+    var dots = t.photos.map(function (_, i) { return '<span' + (i ? '' : ' class="on"') + '></span>'; }).join('');
     var itin = t.itinerary.map(function (r) { return '<li><time>' + esc(r[0]) + '</time><span>' + ph(r[1]) + '</span></li>'; }).join('');
     var inc = t.includes.map(function (x) { return '<li>' + icon('check') + '<span>' + ph(x) + '</span></li>'; }).join('');
     var exc = t.excludes.map(function (x) { return '<li>' + icon('minus') + '<span>' + ph(x) + '</span></li>'; }).join('');
     var waMsg = fmt(T.wa.tour, { tour: t.name });
     sheet.innerHTML =
       '<button type="button" class="sheet__close" data-close aria-label="' + esc(d.close) + '">' + icon('x') + '</button>' +
-      '<div class="car' + (t.alts.length < 2 ? ' car--single' : '') + '" data-car>' +
+      (t.photos.length ? '<div class="car" data-car>' +
         '<div class="car__track" data-track tabindex="0" aria-label="' + esc(t.name) + '">' + slides + '</div>' +
         '<button type="button" class="car__btn car__prev" data-prev aria-label="' + esc(d.prev) + '" disabled>' + icon('left') + '</button>' +
         '<button type="button" class="car__btn car__next" data-next aria-label="' + esc(d.next) + '">' + icon('right') + '</button>' +
         '<div class="car__dots" aria-hidden="true">' + dots + '</div>' +
         '<span class="car__zoom" aria-hidden="true">' + icon('expand', 'ic ic--sm') + '</span>' +
         '<p class="sr-only" aria-live="polite" data-car-status></p>' +
-      '</div>' +
+      '</div>' : '') +
       '<div class="td">' +
         '<div class="td__head">' +
-          '<p class="td__meta"><span>' + icon('pin', 'ic ic--sm') + esc(T.tours.zones[t.zone]) + '</span><span>' + icon('clock', 'ic ic--sm') + t.hours + ' ' + esc(T.tours.hours) + '</span><span>' + ph(t.stops) + '</span></p>' +
+          '<p class="td__meta"><span>' + icon('pin', 'ic ic--sm') + esc(T.tours.zones[t.zone] || t.zone) + '</span><span>' + icon('clock', 'ic ic--sm') + t.hours + ' ' + esc(T.tours.hours) + '</span><span>' + ph(t.stops) + '</span></p>' +
           '<h2 class="td__title" id="td-title">' + ph(t.name) + '</h2>' +
           '<p class="td__summary">' + ph(t.line) + (t.summary && t.summary !== t.line ? ' ' + ph(t.summary) : '') + '</p>' +
           '<p class="td__price">' + esc(T.tours.from) + ' <strong>USD ' + ph(t.price) + '</strong> ' + esc(T.tours.perPerson) + '</p>' +
@@ -201,8 +201,8 @@
         '<a class="btn btn--wa" href="' + waUrl(waMsg) + '" target="_blank" rel="noopener" data-wa="tour-' + t.id + '">' + icon('chat') + esc(d.consult) + '</a>' +
         '<button type="button" class="btn btn--primary" data-book="' + t.id + '">' + esc(d.book) + icon('arrow') + '</button>' +
       '</div>';
-    gallery = t.alts.map(function (alt, i) { return { src: imgSrc(t.id, i + 1), alt: alt }; });
-    initCarousel($('[data-car]', sheet));
+    gallery = t.photos.map(function (f) { return { src: D.photo(f.archivo), alt: f.alt }; });
+    if (t.photos.length) initCarousel($('[data-car]', sheet));
   }
 
   function openTour(id, push) {
@@ -232,7 +232,7 @@
     var a = e.target.closest('[data-tour]'); if (!a) return;
     e.preventDefault(); openTour(a.getAttribute('data-tour'));
   });
-  function fromHash() { var m = location.hash.match(/^#tour-([a-z]+)$/); if (m && tourById[m[1]]) openTour(m[1], false); }
+  function fromHash() { var m = location.hash.match(/^#tour-([a-z0-9-]+)$/); if (m && tourById[m[1]]) openTour(m[1], false); }
   window.addEventListener('hashchange', fromHash);
   fromHash();
 

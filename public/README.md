@@ -1,70 +1,73 @@
-# Hello Mendoza — sitio web
+# Hello Mendoza — cómo editar la página
 
-Sitio estático de una sola página en tres idiomas (ES / EN / PT). Sin frameworks: HTML, CSS y JavaScript.
+Todo el contenido está en **un solo archivo: `contenido.js`**. No hay que instalar nada ni compilar nada.
 
-## Qué subir a Hostinger
+## Cambiar un texto, un precio o un dato
 
-Subí a `public_html/` el contenido de esta carpeta **tal cual**:
+1. En Hostinger: **Administrador de archivos → public_html**.
+2. Clic derecho en **`contenido.js` → Editar**.
+3. Buscá lo que querés cambiar con **Ctrl + F** (Cmd + F en Mac).
+4. Cambiá el texto **dentro de las comillas**. Guardá.
+5. Recargá la página.
 
-```
-index.html          ← español (por defecto)
-en/index.html       ← inglés
-pt/index.html       ← portugués
-assets/             ← css, js, fuentes e imágenes
-.htaccess           ← caché, compresión y tipos de archivo
-robots.txt
-sitemap.xml
-```
+Cada texto aparece en los tres idiomas, uno debajo del otro:
 
-`src/`, `tools/`, `package.json` y este README son para el repo de GitHub: no hacen falta en el hosting (no molestan si se suben).
-
-## Datos pendientes
-
-Todo lo que falta aparece en la página resaltado en dorado y entre `[corchetes]`. Se completa en dos lugares:
-
-| Dónde | Qué |
-|---|---|
-| `src/config.mjs` | dominio (`siteUrl`), precios, puntaje y URL de Tripadvisor, email, dirección, número de habilitación, IDs de Google Analytics y Meta Pixel |
-| `src/i18n/es.mjs`, `en.mjs`, `pt.mjs` | descripciones de Potrerillos, Salentein y Los Toneles, bodegas sugeridas, historia del equipo, nombres de guías, reseñas reales, medios de pago, cancelación, horarios a confirmar |
-
-Después de editar, regenerá las páginas:
-
-```bash
-node tools/build.mjs
+```js
+nombre: {
+  es: 'Maipú, cuna del vino',
+  en: 'Maipú, cradle of wine',
+  pt: 'Maipú, berço do vinho',
+},
 ```
 
-Esto reescribe `index.html`, `en/index.html`, `pt/index.html`, `sitemap.xml` y `robots.txt`. **No edites los HTML a mano**: se pisan en el próximo build.
+Si dejás un idioma vacío (`en: ''`), se muestra el texto en español.
 
-> Importante: cambiá `siteUrl` antes de publicar. Se usa en la URL canónica, hreflang, sitemap y datos estructurados.
+## Cambiar una foto
 
-## Imágenes
+1. Subí la foto nueva a **`public_html/fotos/`**. Sirven .jpg, .png y .webp. Ideal: unos 1600 px de ancho y menos de 400 KB. Podés achicarla en [squoosh.app](https://squoosh.app).
+2. En `contenido.js`, buscá la foto vieja (por ejemplo `maipu-1.webp`) y escribí el nombre de la nueva.
 
-Las imágenes son las **fotos y el logo reales** de Hello Mendoza (excepto las 3 fotos de guías, que son siluetas hasta cargar las reales). Cada foto tiene dos archivos: `nombre-lg.webp` (grande) y `nombre-sm.webp` (800 px, para celular). Para cambiar una, reemplazá los dos con el **mismo nombre** en `assets/img/`. Las fotos de cada tour se leen de la lista `alts` en `src/i18n/*.mjs`: la cantidad de textos define cuántas fotos (`tour-<id>-1`, `-2`…) tiene el carrusel; Potrerillos y Salentein tienen 1 sola por ahora:
+Si la subís **con el mismo nombre** que la anterior, no hace falta tocar `contenido.js`.
 
-| Archivo | Uso | Tamaño sugerido |
+## Agregar o quitar fotos, tours, preguntas u opiniones
+
+Son listas. Para **agregar**, copiá un bloque completo, desde la llave `{` hasta la `},` que lo cierra, pegalo al lado y cambiale los datos. Para **quitar**, borrá el bloque entero.
+
+Ejemplo, una foto más para un tour:
+
+```js
+{
+  archivo: 'maipu-4.jpg',
+  es: 'Almuerzo bajo la parra',
+  en: 'Lunch under the vines',
+  pt: 'Almoço sob a parreira',
+},
+```
+
+## Las 3 reglas para no romper nada
+
+1. El texto va entre **comillas simples**: `'así'`.
+2. Si el texto lleva apóstrofo, ponele una barra antes: `'it\'s'`.
+3. Cada línea termina en **coma**. No borres llaves `{ }` ni corchetes `[ ]`.
+
+Si algo quedó mal escrito, la página muestra un aviso con **el número de línea** donde está el error. Lo corregís, guardás y vuelve a funcionar.
+
+> Consejo: antes de hacer cambios grandes, descargá una copia de `contenido.js` (clic derecho → Descargar). Si algo sale mal, la volvés a subir.
+
+## Qué hay en cada carpeta
+
+| Archivo | Para qué | ¿Se edita? |
 |---|---|---|
-| `hero-desktop.webp` / `-sm` | portada en computadora (16:9) | 1920×1080 / 800 px |
-| `hero-mobile.webp` / `-sm` | portada en celular (vertical) | 1080×1700 / 800 px |
-| `tour-{id}-1..3.webp` / `-sm` | 3 fotos por tour (`lujan`, `maipu`, `uco`, `potrerillos`, `salentein`, `toneles`) | 1600×1067 / 800 px |
-| `custom-tour.webp` | bloque "tour a medida" | 1600×1067 |
-| `gallery-1..6.webp` | galería (1 y 4 son verticales) | 1200×1500 y 1200×800 |
-| `guide-1..3.webp` | fotos de los guías | 800×1000 |
-| `logo.png` | logo redondo (sirve sobre fondo claro y oscuro) | 192×193 |
-| `og-image.jpg` | imagen al compartir en redes | 1200×630 |
+| `contenido.js` | todos los textos, precios, datos y lista de fotos | **Sí** |
+| `fotos/` | las fotos de la página | **Sí**, subís las tuyas |
+| `assets/img/logo.png` | logo redondo (sirve sobre fondo claro y oscuro) | Reemplazar una vez |
+| `assets/img/og-image.jpg` | imagen que aparece al compartir el link (1200×630) | Reemplazar una vez |
+| `index.html`, `en/`, `pt/` | estructura de la página en cada idioma | No |
+| `assets/css`, `assets/js`, `assets/fonts` | diseño y funcionamiento | No |
 
-Cada imagen tiene versión grande y `-sm` (800 px de ancho). Podés convertir a WebP con [Squoosh](https://squoosh.app). Si cambiás el contenido de una foto, actualizá su texto alternativo en `src/i18n/*.mjs`.
+## Datos técnicos
 
-## Cómo funciona
-
-- **Idiomas:** cada idioma es una página propia (mejor para Google). El selector guarda la elección; si alguien eligió inglés y vuelve a la portada, se lo lleva a `/en/`. Si el navegador está en otro idioma, aparece una sugerencia discreta.
-- **WhatsApp:** todos los enlaces abren `wa.me/5492614603906` con el mensaje armado en el idioma activo; desde un tour, el mensaje nombra el tour.
-- **Formulario:** envía un POST JSON a `https://n8n.comercialsl.com/webhook/formulario-hellomendoza` con `nombre, email, telefono, mensaje, tour, fecha, personas, idioma` (+ `idioma_web`). Espera `{"ok": true}`. Si falla, muestra el error y ofrece WhatsApp con los datos cargados. El webhook de n8n debe permitir CORS desde tu dominio (en el nodo Webhook → *Options → Allowed Origins*).
-- **Analítica:** completá `gaId` y `metaPixelId` en `src/config.mjs`. Se registran clics en WhatsApp (`whatsapp_click` / Contact), apertura de tours (`view_item`) y consultas enviadas (`generate_lead` / Lead).
-- **Enlace directo a un tour:** `tudominio.com/#tour-maipu` abre ese tour.
-
-## Regenerar las ilustraciones (opcional)
-
-```bash
-npm install
-python3 tools/scenes.py && node tools/render.mjs
-```
+- **Formulario:** envía un POST JSON a la dirección de `formulario` en `contenido.js`, con `nombre, email, telefono, mensaje, tour, fecha, personas, idioma, idioma_web`. Espera la respuesta `{"ok": true}`. El webhook de n8n tiene que permitir tu dominio en *Allowed Origins*.
+- **Analítica:** completá `googleAnalytics` y `metaPixel` en `contenido.js`.
+- **Enlace directo a un tour:** `tudominio.com/#tour-maipu-cuna-del-vino`. El nombre sale del nombre del tour en español.
+- **Dominio:** `https://hellomendoza.com`, ya configurado en `index.html`, `en/`, `pt/`, `sitemap.xml` y `robots.txt`.

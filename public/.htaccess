@@ -2,10 +2,13 @@
 Options -Indexes
 DirectoryIndex index.html
 
-# Forzar HTTPS (descomentá cuando el SSL esté activo)
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Forzar HTTPS y dominio sin "www" (hellomendoza.com)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} off [OR]
+  RewriteCond %{HTTP_HOST} ^www\. [NC]
+  RewriteRule ^ https://hellomendoza.com%{REQUEST_URI} [L,R=301]
+</IfModule>
 
 <IfModule mod_mime.c>
   AddType image/webp .webp
@@ -28,6 +31,16 @@ DirectoryIndex index.html
   ExpiresByType image/svg+xml "access plus 6 months"
   ExpiresByType font/woff2 "access plus 1 year"
 </IfModule>
+
+# contenido.js se edita seguido: que el navegador siempre pida la versión nueva
+<FilesMatch "^contenido\.js$">
+  <IfModule mod_expires.c>
+    ExpiresActive Off
+  </IfModule>
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, must-revalidate"
+  </IfModule>
+</FilesMatch>
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"

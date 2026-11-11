@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.[tu-dominio].com/</loc>
+    <loc>https://hellomendoza.com/</loc>
     <lastmod>2026-11-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.[tu-dominio].com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.[tu-dominio].com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.[tu-dominio].com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.[tu-dominio].com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hellomendoza.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellomendoza.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hellomendoza.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellomendoza.com/"/>
   </url>
   <url>
-    <loc>https://www.[tu-dominio].com/en/</loc>
+    <loc>https://hellomendoza.com/en/</loc>
     <lastmod>2026-11-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.[tu-dominio].com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.[tu-dominio].com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.[tu-dominio].com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.[tu-dominio].com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hellomendoza.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellomendoza.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hellomendoza.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellomendoza.com/"/>
   </url>
   <url>
-    <loc>https://www.[tu-dominio].com/pt/</loc>
+    <loc>https://hellomendoza.com/pt/</loc>
     <lastmod>2026-11-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://www.[tu-dominio].com/"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.[tu-dominio].com/en/"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.[tu-dominio].com/pt/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.[tu-dominio].com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://hellomendoza.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hellomendoza.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://hellomendoza.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hellomendoza.com/"/>
   </url>
 </urlset>
